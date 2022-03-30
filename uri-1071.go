@@ -7,6 +7,7 @@ func main() {
 
 	fmt.Scanln(&a)
 	fmt.Scanln(&b)
+	fmt.Println(a, b)
 
 	if a < b {
 		i = a
