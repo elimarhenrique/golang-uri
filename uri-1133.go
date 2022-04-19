@@ -25,5 +25,4 @@ func main() {
 		x++
 	}
 
-	fmt.Printf("teste: %f\n", math.Mod(2.0, 5.0))
 }
