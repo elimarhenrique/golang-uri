@@ -7,21 +7,20 @@ func main() {
 
 	fmt.Scanln(&a)
 	fmt.Scanln(&b)
-	fmt.Println(a, b)
 
 	if a < b {
-		i = a
-		x = b
+		i = a + 1
+		x = b - 1
 	} else {
-		i = b
-		x = a
+		i = b + 1
+		x = a - 1
 	}
 
-	for i < x-1 {
-		i++
-		if i > 0 && i%2 != 0 {
+	for i <= x {
+		if i%2 != 0 {
 			count += i
 		}
+		i++
 	}
 
 	fmt.Println(count)

@@ -5,7 +5,7 @@ import (
 )
 
 func main() {
-	var x, y, aux int
+	var x, y, aux, sum int
 
 	fmt.Scanf("%d", &x)
 	fmt.Scanf("%d", &y)
@@ -16,13 +16,12 @@ func main() {
 		x = aux
 	}
 
-	fmt.Println("x:", x, " y:", y)
-	x++
-	for x < y {
-		if (x%5 == 2) || (x%5 == 3) {
-			fmt.Println(x)
+	for x <= y {
+		if x%13 != 0 {
+			sum += x
 		}
 		x++
 	}
 
+	fmt.Println(sum)
 }
